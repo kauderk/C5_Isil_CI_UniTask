@@ -171,9 +171,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotateToCenter: 1
   currentAttractor: {fileID: 0}
-  isJumping: 0
-  tJump: 0
-  jumpSpeed: 1
+  speed: 10
+  grounded: 0
+  jumpForce: 200
+  SourfaceMask:
+    serializedVersion: 2
+    m_Bits: 128
 --- !u!50 &1012685658
 Rigidbody2D:
   serializedVersion: 4
@@ -316,7 +319,7 @@ GameObject:
   - component: {fileID: 1496220551}
   - component: {fileID: 1496220554}
   - component: {fileID: 1496220553}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Attractor Planet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
