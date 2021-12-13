@@ -147,8 +147,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 2
-    height: 2
+    width: 3
+    height: 3
 --- !u!114 &4251324505693547872
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -162,8 +162,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _img: {fileID: 3539667352942433463}
-  _x: 0.005
-  _y: 0.005
+  _x: 0.05
+  _y: 0.05
 --- !u!225 &3156697096142119994
 CanvasGroup:
   m_ObjectHideFlags: 0
