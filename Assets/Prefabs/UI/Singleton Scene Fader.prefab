@@ -87,6 +87,7 @@ GameObject:
   - component: {fileID: 7864316742080152055}
   - component: {fileID: 3539667352942433463}
   - component: {fileID: 4251324505693547872}
+  - component: {fileID: 3156697096142119994}
   m_Layer: 0
   m_Name: Scrolling BG
   m_TagString: Untagged
@@ -163,6 +164,18 @@ MonoBehaviour:
   _img: {fileID: 3539667352942433463}
   _x: 0.005
   _y: 0.005
+--- !u!225 &3156697096142119994
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2395868949553577151}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
+  m_IgnoreParentGroups: 0
 --- !u!1 &2560719077544605553
 GameObject:
   m_ObjectHideFlags: 0
