@@ -12,6 +12,11 @@ public class ButtonSVA : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     [SerializeField] AudioClip _pressAuido, _releaseAudio;
     [SerializeField] AudioSource _audioSource;
 
+    private void Awake()
+    {
+        _audioSource.volume = .5f;
+    }
+
     public void OnPointerDown(PointerEventData eventData)
     {
         _img.sprite = _pressedSprite;
