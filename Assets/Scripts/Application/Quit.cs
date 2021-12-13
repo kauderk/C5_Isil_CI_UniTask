@@ -14,6 +14,7 @@ public class Quit : MonoBehaviour
     public IEnumerator QuitGameCoroutine()
     {
         yield return new WaitForSeconds(1);
+        SceneController.Instance.ToogleFader(true);
         // save any game data here
 #if UNITY_EDITOR
         // Application.Quit() does not work in the editor so

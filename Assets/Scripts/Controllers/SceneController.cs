@@ -12,7 +12,7 @@ public class SceneController : MonoBehaviour
     public Image fader;
     public static SceneController Instance;
 
-    private void ToogleFader(bool b)
+    public void ToogleFader(bool b)
     {
         fader.gameObject.SetActive(b);
     }
