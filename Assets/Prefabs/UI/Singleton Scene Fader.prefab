@@ -58,7 +58,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.62352943, g: 0.48627454, b: 0.2784314, a: 1}
+  m_Color: {r: 0.2509804, g: 0.28627452, b: 0.45098042, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -435,6 +435,9 @@ GameObject:
   - component: {fileID: 6473076492462143738}
   - component: {fileID: 8022809814690609447}
   - component: {fileID: 8028305192304657654}
+  - component: {fileID: 3604662027424831800}
+  - component: {fileID: 1668254339114873871}
+  - component: {fileID: 8430654200471688295}
   m_Layer: 0
   m_Name: Audio
   m_TagString: Untagged
@@ -489,7 +492,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 1e46cec5eb54d7d408c27b4039cc896d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 20df7c2a220bbf74790e17b7697e0cf8, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -499,6 +502,192 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &3604662027424831800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2719155936389528925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9085046f02f69544eb97fd06b6048fe2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 8028305192304657654}
+  toggleTransition: 1
+  graphic: {fileID: 0}
+  m_Group: {fileID: 0}
+  onValueChanged:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7880860621607655752}
+        m_TargetAssemblyTypeName: GlobalAuido, Assembly-CSharp
+        m_MethodName: ToogleMute
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2207847736237410691}
+        m_TargetAssemblyTypeName: SliderU, Assembly-CSharp
+        m_MethodName: ToogleDisabled
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_IsOn: 0
+--- !u!82 &1668254339114873871
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2719155936389528925}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &8430654200471688295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2719155936389528925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41a5c2fb071f83048ab8ffec7a1bd3aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _img: {fileID: 8028305192304657654}
+  _defaultSprite: {fileID: 21300000, guid: 20df7c2a220bbf74790e17b7697e0cf8, type: 3}
+  _pressedSprite: {fileID: 21300000, guid: 6e4bdefeccd131546bf5dd4ee9c6d1c4, type: 3}
+  _pressAuido: {fileID: 8300000, guid: 2f9528bb24b4a6348a4e30addbcac7db, type: 3}
+  _releaseAudio: {fileID: 8300000, guid: 676b668c71e92754eb23f86d681ffeeb, type: 3}
+  _audioSource: {fileID: 1668254339114873871}
 --- !u!1 &3131447730730980013
 GameObject:
   m_ObjectHideFlags: 0
@@ -509,6 +698,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5809240494239115858}
   - component: {fileID: 7710261115446167381}
+  - component: {fileID: 2207847736237410691}
   m_Layer: 0
   m_Name: Slider
   m_TagString: Untagged
@@ -559,11 +749,11 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.69803923, g: 0.5568628, b: 0.34901962, a: 1}
-    m_HighlightedColor: {r: 0.5686275, g: 0.43529415, b: 0.24313727, a: 1}
-    m_PressedColor: {r: 0.25882354, g: 0.18431373, b: 0.09019608, a: 1}
-    m_SelectedColor: {r: 0.70980394, g: 0.5686275, b: 0.3529412, a: 1}
-    m_DisabledColor: {r: 0.38823533, g: 0.36078432, b: 0.24705884, a: 1}
+    m_NormalColor: {r: 0.31764707, g: 0.48235297, b: 0.5803922, a: 1}
+    m_HighlightedColor: {r: 0.25882354, g: 0.32156864, b: 0.38823533, a: 1}
+    m_PressedColor: {r: 0.30980393, g: 0.6431373, b: 0.72156864, a: 1}
+    m_SelectedColor: {r: 0.30980393, g: 0.6431373, b: 0.72156864, a: 1}
+    m_DisabledColor: {r: 0.90196085, g: 0.14117648, b: 0.14117648, a: 1}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -588,7 +778,31 @@ MonoBehaviour:
   m_Value: 0.5
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7880860621607655752}
+        m_TargetAssemblyTypeName: GlobalAuido, Assembly-CSharp
+        m_MethodName: Volume
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &2207847736237410691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3131447730730980013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67756564e51144c48a8e2d68d7f22580, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3322006639270078175
 GameObject:
   m_ObjectHideFlags: 0
@@ -820,6 +1034,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4211638141669228483}
+  - component: {fileID: 7880860621607655752}
   m_Layer: 0
   m_Name: Auido Sttgs
   m_TagString: Untagged
@@ -848,6 +1063,18 @@ RectTransform:
   m_AnchoredPosition: {x: -220, y: 75.67189}
   m_SizeDelta: {x: 208, y: 70}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &7880860621607655752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4598822113211139033}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1c70afcc622ed94abd2c978dea55339, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5030818131722749058
 GameObject:
   m_ObjectHideFlags: 0
@@ -906,7 +1133,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.33490568, g: 0.7487423, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1147,7 +1374,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 03ee70f3b19309c45a2414b21f94d944, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1e471998958644644880767ca5120344, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1372,7 +1599,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.28627452, g: 0.21176472, b: 0.10980393, a: 1}
+  m_Color: {r: 0.30588236, g: 0.57254905, b: 0.7372549, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
