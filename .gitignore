@@ -84,3 +84,5 @@ crashlytics-build.properties
 /Assets/Sprites/Mouse/
 /Assets/Sprites/UI/Menu Buttons Bundle/
 *.zip
+/Assets/Tutorial\ Assets
+/Assets/Hording\ Assets
