@@ -15,7 +15,7 @@ public class TriggerMeChangeLevel : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             other.enabled = false;
-            UnAwaitSceneTransition().GetAwaiter().GetResult();
+            UnAwaitSceneTransition().GetAwaiter();
         }
     }
 
