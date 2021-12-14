@@ -20,11 +20,10 @@ public class Player : SateliteBeing
         satelite.angle = GameManager.Instance.planetoidPlayerBithAngle;
     }
 
-    void Update()
+    public void CustomUpdate()
     {
         // an action or callback that returns satelite.radius would be nice here...
         RotateAroundPlanet(Input.GetAxis("Horizontal"), satelite);
-
 
         #region jumping logic 
         // si se presiona UP, se activa el salto

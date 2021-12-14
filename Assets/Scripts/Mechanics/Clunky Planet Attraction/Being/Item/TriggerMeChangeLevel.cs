@@ -14,11 +14,11 @@ public class TriggerMeChangeLevel : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            NewMethod();
+            UnAwaitSceneTransition().GetAwaiter().GetResult();
         }
     }
 
-    private async UniTask NewMethod()
+    private async UniTask UnAwaitSceneTransition()
     {
         await SceneController.Instance.LoadScene(levelToLoad);
     }

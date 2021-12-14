@@ -1335,6 +1335,7 @@ GameObject:
   - component: {fileID: 6562654630068507136}
   - component: {fileID: 565357467903991203}
   - component: {fileID: 6553840331393217018}
+  - component: {fileID: 2131099047546389224}
   m_Layer: 0
   m_Name: Gear
   m_TagString: Untagged
@@ -1455,6 +1456,18 @@ MonoBehaviour:
           m_StringArgument: Show
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2131099047546389224}
+        m_TargetAssemblyTypeName: TooglePause, Assembly-CSharp
+        m_MethodName: Toogle
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!82 &565357467903991203
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1569,6 +1582,18 @@ MonoBehaviour:
   _pressAuido: {fileID: 8300000, guid: 6951f934298d268449f96e53d297255b, type: 3}
   _releaseAudio: {fileID: 8300000, guid: fe642986ecb9fd34c8f517e4ce9c140b, type: 3}
   _audioSource: {fileID: 565357467903991203}
+--- !u!114 &2131099047546389224
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8835045292532662480}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c49612c49eb445543842060e04539ff2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &9012877961738166514
 GameObject:
   m_ObjectHideFlags: 0
@@ -2116,6 +2141,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ee366af6fae2514d99c1cff3d23001d, type: 3}
+--- !u!224 &1614627229391500110 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 7558123823451521755, guid: 4ee366af6fae2514d99c1cff3d23001d, type: 3}
+  m_PrefabInstance: {fileID: 9118548428126908821}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1233349369597093852 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8040662340552234569, guid: 4ee366af6fae2514d99c1cff3d23001d, type: 3}
@@ -2127,8 +2157,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c5026946639f3f4598b3b5cee3219ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!224 &1614627229391500110 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 7558123823451521755, guid: 4ee366af6fae2514d99c1cff3d23001d, type: 3}
-  m_PrefabInstance: {fileID: 9118548428126908821}
-  m_PrefabAsset: {fileID: 0}
