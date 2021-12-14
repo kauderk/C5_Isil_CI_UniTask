@@ -13,7 +13,7 @@ public class Player : SateliteBeing
 
     // jump variables
     bool isJumping = false;
-    bool isFalling = false;
+    //bool isFalling = false;
 
     private void Start()
     {
@@ -27,10 +27,9 @@ public class Player : SateliteBeing
 
         #region jumping logic 
         // si se presiona UP, se activa el salto
-        if (Input.GetKeyDown(KeyCode.UpArrow) && !isJumping)
-        {
-            isJumping = true;
-        }
+        if (Input.GetButtonDown("Jump") || Input.GetKeyDown(KeyCode.W))
+            if (!isJumping)
+                isJumping = true;
 
         // si el salto está activo
         if (isJumping)
@@ -60,7 +59,7 @@ public class Player : SateliteBeing
                     if (distance <= MapData.planets[i].gravityRadius)
                     {
                         // colisionó
-                        isFalling = true;
+                        //isFalling = true;
                     }
                 }
             }

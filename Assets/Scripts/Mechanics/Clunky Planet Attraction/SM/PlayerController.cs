@@ -7,7 +7,6 @@ public class PlayerController : MonoBehaviour
 {
     PlayerState state;
 
-
     public PlayerState GetPlayerState()
     {
         return state;
@@ -28,7 +27,7 @@ public class PlayerController : MonoBehaviour
     const float MAX_RADIUS = 2.4f;
     float radius = MAX_RADIUS;
     float angle = 0;
-    float speed = 1;
+    //float speed = 1;
 
 
     // estado PAUSE
@@ -69,7 +68,7 @@ public class PlayerController : MonoBehaviour
         CalculateJump();
         Locate();
 
-        Debug.Log("idle");
+        //Debug.Log("idle");
 
         /** CONDICIÓN DE SALIDA 1 **/
         if (Input.GetKeyDown(KeyCode.Z))
@@ -93,7 +92,7 @@ public class PlayerController : MonoBehaviour
         // CalculateJump();
         // Locate();
 
-        Debug.Log("playing");
+        //Debug.Log("playing");
 
         /** CONDICIÓN DE SALIDA 1 **/
         if (Input.GetKeyDown(KeyCode.Z))
@@ -115,7 +114,7 @@ public class PlayerController : MonoBehaviour
         CalculateCartesianCoordinates();
         Locate();
 
-        Debug.Log("pause");
+        //Debug.Log("pause");
 
         // cálculo de animación
         transform.localScale = Vector3.Lerp(startPauseSize, endPauseSize, Tweens.Linear(tPause));
