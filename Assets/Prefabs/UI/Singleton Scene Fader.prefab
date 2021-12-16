@@ -863,6 +863,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fader: {fileID: 3376690694632021943}
+  GlobalVolumeToogle: {fileID: 3604662027424831800}
 --- !u!1 &3322006640008437530
 GameObject:
   m_ObjectHideFlags: 0

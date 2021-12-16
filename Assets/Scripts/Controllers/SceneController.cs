@@ -10,11 +10,17 @@ using UnityEngine.UI;
 public class SceneController : MonoBehaviour
 {
     public Image fader;
+    public Toggle GlobalVolumeToogle;
     public static SceneController Instance;
 
-    public void ToogleFader(bool b)
+    public void ToogleFader(bool b) => fader.gameObject.SetActive(b);
+
+    void OnEnable() => SceneManager.sceneLoaded += OnSceneLoaded;
+    void OnDisable() => SceneManager.sceneLoaded -= OnSceneLoaded;
+
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        fader.gameObject.SetActive(b);
+        AudioListener.pause = GlobalVolumeToogle.isOn;
     }
 
     private void Awake()
